@@ -25,9 +25,9 @@ pipeline {
 	    stage('Build Docker Image') {
 		    steps {
 			    sh 'whoami'
-			    sh '''
+			    sh """
 				  myimage = docker.build("fazilniveus/devops:latest")
-			    '''		
+			    """	
 			    
 		    }
 	    }
